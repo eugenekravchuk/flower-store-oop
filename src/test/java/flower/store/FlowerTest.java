@@ -1,11 +1,10 @@
 package flower.store;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class FlowerTest {
     private static final Random RANDOM_GENERATOR = new Random();
@@ -30,4 +29,6 @@ public class FlowerTest {
         flower.setColor(color);
         Assertions.assertEquals("#FF0000", flower.getColor());
     }
+
+    
 }

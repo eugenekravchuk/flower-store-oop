@@ -14,14 +14,15 @@ public class Flower {
     @Getter @Setter
     private FlowerType flowerType;
 
-    public Flower(){
+    public Flower() {
         this.sepalLength = 0;
         this.color = FlowerColor.RED;
         this.price = 0;
         this.flowerType = FlowerType.ROSE;
     } 
 
-    public Flower(double sepalLength, FlowerColor color, double price, FlowerType flowerType) {
+    public Flower(double sepalLength, FlowerColor color, 
+    double price, FlowerType flowerType) {
         this.sepalLength = sepalLength;
         this.color = color;
         this.price = price;
@@ -30,7 +31,8 @@ public class Flower {
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + " [Sepal Length: " + sepalLength + 
-               ", Color: " + color + ", Price: $" + price + "]";
+        return this.getClass().getSimpleName() 
+        + " [Sepal Length: " + sepalLength
+        + ", Color: " + color + ", Price: $" + price + "]";
     }
 }

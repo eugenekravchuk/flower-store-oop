@@ -29,7 +29,7 @@ public class Flower {
         this.flowerType = flowerType;
     }
 
-    public String getColor(){
+    public String getColor() {
         return this.color.toString();
     }
 
